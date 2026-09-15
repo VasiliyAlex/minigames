@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/VasiliyAlex/minigames#readme",
   "devDependencies": {
+    "typescript": "^7.0.2",
     "vite": "^8.3.0"
   }
 }
