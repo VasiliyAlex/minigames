@@ -10,10 +10,7 @@ export default tseslint.config(
   {
     files: ['**/*.{js,ts}'],
 
-    extends: [
-      js.configs.recommended,
-      tseslint.configs.recommended,
-    ],
+    extends: [js.configs.recommended, tseslint.configs.recommended],
 
     plugins: {
       unicorn,
