@@ -1,3 +1,5 @@
+import './styles/main.scss';
+
 const appTitle: string = 'MiniGames';
 
 const getAppTitle = (title: string): string => title;
