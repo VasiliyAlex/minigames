@@ -1,0 +1,29 @@
+@use './tokens' as *;
+
+// Responsive
+@mixin respond-to($media) {
+  @if $media == 'mobile' {
+    @media (max-width: #{$breakpoint-tablet - 1px}) {
+      @content;
+    }
+  } @else if $media == 'tablet' {
+    @media (min-width: $breakpoint-tablet) and (max-width: #{$breakpoint-desktop - 1px}) {
+      @content;
+    }
+  } @else if $media == 'desktop' {
+    @media (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}
+
+// Hard Shadows
+@mixin hard-shadow($level: 1) {
+  @if $level == 1 {
+    box-shadow: $shadow-level-1;
+  } @else if $level == 2 {
+    box-shadow: $shadow-level-2;
+  } @else if $level == 3 {
+    box-shadow: $shadow-level-3;
+  }
+}
