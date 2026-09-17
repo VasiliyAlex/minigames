@@ -1,7 +1,13 @@
 import './styles/main.scss';
 
-const appTitle: string = 'MiniGames';
+const app = document.createElement('div');
 
-const getAppTitle = (title: string): string => title;
+app.className = 'app';
 
-getAppTitle(appTitle);
+app.innerHTML = `
+  <main>
+    <h1>MiniGames</h1>
+  </main>
+`;
+
+document.body.append(app);
